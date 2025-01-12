@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Portofolio Pribadi - Teguh Arya Bagaskara</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #0f80aa;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffe500;
+            color: #0f80aa;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* Profile Section */
+        .profile {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #0f80aa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .profile img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile h2 {
+            margin: 20px 0 10px;
+            font-size: 2rem;
+            color: #0f80aa;
+        }
+
+        .profile p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Section Styling */
+        .section {
+            margin: 40px 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            color: #0f80aa;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .skills ul, .projects ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .skills li, .projects li {
+            background: #fff;
+            color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            width: calc(33.333% - 20px);
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skills li:hover, .projects li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .skills li, .projects li {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skills li, .projects li {
+                width: 100%;
+            }
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 40px;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+            font-size: 24px;
+            transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #0f80aa;
+            transform: scale(1.2);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="logo">Teguh Arya Bagaskara</div>
+    <ul>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Portofolio Saya</h1>
+    <p>Jelajahi keahlian dan proyek terbaru saya.</p>
+</header>
+
+<main class="container">
+    <!-- Profile Section -->
+    <section class="profile">
+        <img src="WhatsApp Image 2024-12-17 at 19.31.33.jpeg" alt="Foto Profil Yuda Arya">
+        <h2>Teguh Arya Bagaskara</h2>
+        <p>Saya adalah pengembang web yang bersemangat memadukan teknologi dan desain. Saya suka tantangan dan terus belajar setiap hari.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p>Saya memiliki pengalaman dalam pengembangan web front-end dan back-end menggunakan teknologi seperti HTML, CSS, JavaScript, React, dan Node.js. Saya juga menyukai desain UX/UI dan terus mengeksplorasi inovasi dalam pengembangan aplikasi.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <h2 class="section-title">Keahlian Saya</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Vue.js, Angular</li>
+            <li>Node.js, Express.js</li>
+            <li>MySQL, MongoDB</li>
+            <li>Git, GitHub</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <h2 class="section-title">Proyek Saya</h2>
+        <ul>
+            <li><a href="#">Aplikasi To-Do List</a> - Dibuat dengan React.</li>
+            <li><a href="#">Situs Portofolio</a> - Menggunakan HTML, CSS, dan JavaScript.</li>
+            <li><a href="#">E-commerce Website</a> - Dibangun dengan Node.js dan MongoDB.</li>
+        </ul>
+    </section>
+</main>
+
+<footer id="contact">
+    <p>&copy; 2024 Teguh Arya Bagaskara. <a href="mailto:email@domain.com">Hubungi Saya</a></p>
+    <div class="social-icons">
+        <a href="https://wa.me/628xxxxxxxxxx" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/username" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/username" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+    </div>
+</footer>
+</body>
+</html>
